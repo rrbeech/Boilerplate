@@ -8,15 +8,19 @@ public class torch : MonoBehaviour
     public bool TorchON = false;
     public  GameObject torchLight;
     public GameObject flames;
+    public GameObject glow;
 
  
     void Start()
     {
         torchLight = GameObject.Find("TorchLight").gameObject; //point light source (child)
         flames = GameObject.Find("Flames").gameObject; // Particle flames (child)
+        glow = GameObject.Find("Glow").gameObject; // Particle flames (child)
+
         TorchON = false;
         torchLight.SetActive(false);
         flames.SetActive(false);
+        glow.SetActive(false);
     }
 
     public void turnOnTorch()
@@ -24,6 +28,7 @@ public class torch : MonoBehaviour
         TorchON = true;
         torchLight.SetActive(true);
         flames.SetActive(true);
+        glow.SetActive(true);
     }
 
     public void turnOFFTorch()
@@ -35,6 +40,7 @@ public class torch : MonoBehaviour
             TorchON = false;
             torchLight.SetActive(false);
             flames.SetActive(false);
+            glow.SetActive(false);
         }
 
     }

@@ -1068,7 +1068,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TorchON: 0
   torchLight: {fileID: 1197725355}
-  flames: {fileID: 0}
+  flames: {fileID: 658601824}
+  glow: {fileID: 1451381273}
 --- !u!1 &428547583
 GameObject:
   m_ObjectHideFlags: 0
@@ -7201,7 +7202,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!54 &1030121309
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7388,7 +7389,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1197725356
 Transform:
   m_ObjectHideFlags: 0
